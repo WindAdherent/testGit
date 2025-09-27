@@ -14,4 +14,11 @@ fun main() {
     data class Person(val name: String, var age: Int)
     //尝试创建一个类
     data class Address(val street: String, var region: Int)
+    data class Company(val ID: Person, val live: Address)
+    val people1 = Person("Dmitry", 28)
+    val address1 = Address("Dayuncun", 29)
+    
+    val comployee = Company(people1, address1)
+    println(comployee.ID.name)
+    println(comployee.live.street)
 }
