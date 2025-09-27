@@ -11,4 +11,6 @@ fun main() {
         // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
         println("i = $i")
     }
+    data class Person(val name: String, var age: Int)
+    //尝试创建一个类
 }
